@@ -26,7 +26,7 @@ if [ "$vericoin_stake" = true ] ; then
     do
         sleep 120
         echo "Start staking for the $i times";
-        vericoin-cli walletpassphrase "$vericoin_walletpassword" 9999999 true
+        vericoin-cli -conf=/root/.vericonomy/vericoin/vericonomy.conf walletpassphrase "$vericoin_walletpassword" 9999999 true
         printf "Finished staking\n";
     done
 else
