@@ -8,6 +8,10 @@ printf "Checking bootstrap\n";
 printf "Checking configuration file\n";
 /usr/libexec/vericoin2/setupconfig.sh
 
+#setup config file
+printf "Checking wallet file(s)\n";
+/usr/libexec/vericoin2/walletcheck.sh
+
 #look config file
 printf "Loading configuration file\n";
 source /root/.vericonomy/vericoin/dockervericoin.conf
