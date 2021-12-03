@@ -10,7 +10,7 @@ printf "Checking configuration file\n";
 
 #look config file
 printf "Loading configuration file\n";
-source /root/.vericonomy/vericoin/vericonomy.conf
+source /root/.vericonomy/vericoin/dockervericoin.conf
 
 printf "Startup\n";
 if [ "$vericoin_stake" = true ] ; then
