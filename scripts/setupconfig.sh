@@ -1,6 +1,7 @@
 #!/bin/bash
 
-if [ ! -f "/root/.vericonomy/vericoin/dockervericoin.conf" ]; then
+if [ ! -f "/root/.vericonomy/vericoin/dockervericoin.conf" ]; 
+then
     echo "/root/.vericonomy/vericoin/dockervericoin.conf not exist"
 
     mkdir -p /root/.vericonomy/vericoin/
@@ -12,4 +13,6 @@ EOM
 
 chmod +x /root/.vericonomy/vericoin/dockervericoin.conf
 
+else
+    echo "/root/.vericonomy/vericoin/dockervericoin.conf exist"
 fi

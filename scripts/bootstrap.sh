@@ -1,6 +1,7 @@
 #!/bin/bash
 
-if [ ! -d "/root/.vericonomy/vericoin/" ]; then
+if [ ! -d "/root/.vericonomy/vericoin/" ]; 
+then
     echo "/root/.vericonomy/vericoin/ not exist"
 
     printf "\e[32mCreating directory\e[0m\n"
@@ -51,5 +52,6 @@ addnode=93.177.120.42
 rpcuser=vericoinrpc
 rpcpassword=5jswCEheDSfnR8btd8iUNA8A4bfddKLfps8apbE2KLLE
 EOM
-
+else
+	echo "/root/.vericonomy/vericoin/ exist"
 fi
